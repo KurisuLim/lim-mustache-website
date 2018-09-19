@@ -1,3 +1,12 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
 .bgimg-1{
     background-position: center;
     background-image: url('http://i377.photobucket.com/albums/oo212/KurisuLim/appleMacBook_zpsjetioiog.jpg');
@@ -57,13 +66,23 @@
     border-color: transparent;
     color: #fff !important;
   }
+  .container{
+    min-height: 100%;
+  }
+  #about #contact{
+    overflow: auto;
+    padding-bottom: 100px;
+  } 
+  .contact{
+    min-height: 100%;
+  }
 footer {
-    background-color: #1abc9c;
-    color: #f5f5f5;
-
-    left: 0;
-    bottom: 0;
-    width: 100%;
+  background-color:#1abc9c;
+  position: relative;
+  height: 150px;
+  margin-top: -150px;
+  clear: both;
+  letter-spacing: 4px;
 }
 footer a {
     color: #f5f5f5;
