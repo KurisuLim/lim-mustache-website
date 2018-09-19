@@ -1,8 +1,8 @@
-#dvt{
-    background-color: black;
-    background-image: url('http://i377.photobucket.com/albums/oo212/KurisuLim/26166866_1781308041888525_443652664680978078_n_zpsz9ktyxkr.jpg');
+.bgimg-1{
+    background-position: center;
+    background-image: url('http://i377.photobucket.com/albums/oo212/KurisuLim/appleMacBook_zpsjetioiog.jpg');
     background-size: cover;
-    margin:0;
+    min-height: 100%;
   }
   .bg-grey{
     background-color: #ecf0f1;
@@ -87,21 +87,15 @@ textarea {
   .navbar {
     font-family: Montserrat, sans-serif;
   }
-  h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #303030;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  
-  h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    color: #303030;
-    font-weight: 400;
-    margin-bottom: 30px;
-  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+}
+.form-control {
+  border-radius: 0;
+}
   .carousel-inner img {
     -webkit-filter: grayscale(90%);
     filter: grayscale(90%); /* make all photos black and white */ 
