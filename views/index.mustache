@@ -1,69 +1,120 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html dir='ltr' lang='en-US'>
 {{>head}}
 <body>
   {{>navbar}}
-  {{>jumbotron}}
-  <div class='container'>
-  <div id="about" class="text-center">
-    <h3>About</h3>
-    <p><em>I embrace the struggle!</em></p>
-    <p>
-      I was born and raise in the Philippines and moved to the United States when I was 16.
-      Even as a child, I always find computers to be facinating. Back then, I do not own any
-      personal computer or even a laptop. The only access that I have to any computer device is to
-      go to a computer shop and rent it for 20 pesos an hour. And even if there will be a quiz or an exam
-      in school. I spend my time in the Computer Shop. That is why during my high school years, I always
-      get "Best in Computer" award.
-    </p>
-    <br/><br/><br/>
-    <div class='text-left'>
-    <h3>2007-2012</h3>
-    <p>
-      I began my journey to become a computer programmer in San Diego City College. I took
-      Java, Java Alice, Game Maker, Visual Basic, C++ and C#. Also, there I met my first
-      mentor who happen to be also my CISC professor Mr. Larry Forman. He always encourge me to
-      be the best that I can. And always try to reach for the STARS. But unfortunately, with the
-      recession and goverment budget cuts. The one subject that I need to get a certificate
-      was not being teach to any San Diego Colleges.
-    </p>
+  {{>splash}}
+  <!-- Page Container -->
+  <div id='about' class='w3-container' style='padding:128px 16px'>
+      <!-- Grid -->
+      <div class='w3-row-padding'>
+      <!-- Skills -->
+      <div class='w3-third'>
+      <div class="w3-container">
+       <div class='w3-container w3-card w3-white'>
+        <h2 class='w3-text-grey w3-padding-16'><i class='icon fa fa-asterisk fa-fw w3-margin-right w3-xxlarge'></i>Skills</h2>
+        <div class='w3-container'>
+        <p>HTML</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:90%">90%</div>
+          </div>
+          <p>CSS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:85%">85%</div>
+          </div>
+          <p>JavaScript</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:85%">85%</div>
+          </div>
+          <p>jQUERY</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:75%">75%</div>
+          </div>
+          <p>SQL</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:70%">70%</div>
+          </div>
+          <p>React</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:80%">80%</div>
+          </div>
+          <p>React Native</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:85%">85%</div>
+          </div>
+          <p>MongoDB</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:70%">70%</div>
+          </div>
+          <p>Git</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:85%">85%</div>
+          </div>
+          <p>Angular JS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:50%">Learning</div>
+          </div>
+          <p>Angular 6</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:50%">Learning</div>
+          </div>
+          <p>Phyton</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-blue" style="width:50%">Learning</div>
+          </div>
+          <br/>
+        </div>
+      </div>
+      </div>
+      <!-- Skills End -->
+      </div>
+
+      <!-- About -->
+      <div class='w3-twothird'>
+      <div class='w3-container w3-card w3-white w3-margin-bottom'>
+        <h2 class='w3-text-grey w3-padding-16'><i class='icon fa fa-suitcase fa-fw w3-margin-right w3-xxlarge'></i>About</h2>
+        <div class='w3-container'>
+          <p>
+            Born in the island of the Philippines, I came to America with my family when I was 16 years old.
+            I wanted to attend to Morse Highschool to get a U.S Highschool Diploma, but was turned away because
+            the person I spoke to said I already have a H.S Diploma from the Philippines. That person told me that I can 
+            go to college. When to South Western College, then got turned away again. I was told, I need to get a GED at lease
+            to get to college. Then went to an Adult School and was told I needed to be 18 to take any classes. Then my Dad told
+            me to go to a vocational school to become a Pharmacy Tech. Then completed the course and passes the CA Board Exam, then
+            went to find a job but had no luck because I got no experience. Then I decided to take the GED from Adult School,
+            passed it and went to college to get Computer Science Information degree. Didn't workout, because one last subject
+            that I need to take is not available to any colleges due to budget cuts.
+          </p> 
+          <hr>
+          <p>
+            Fast forward, I submitted at lease 50+ application forms and never got any call. Also, during that time,
+            I even applied to Mcdonalds, Walmart, Target, and even GameStop. But no one gives me a chance to get to
+            work. Then after a couple of years of finding a job, an opportunity came. The place that my mother works
+            is hiring a Pharmacy Technician. I was referred and got hired right away. I stayed working on that job,
+            till I went to Origin Code Academy to become a Software Developer. 
+          </p>
+        </div>
+      </div>
+      </div>
+  <!-- End About -->
     </div>
-    <br/><br/><br/>
-    <div class='text-left'>
-    <h3>2014-2018</h3>
-    <p>
-      I joined Alvarado Community Pharmacy and started working as an Out Patient Pharmacy Technician.
-      As a Pharmacy Technician, I deal with customer service every day. But taking phone calls, assisting
-      patients at the front. Processing and Filling prescription with great accuracy. I am also in charge
-      in putting away stock that needs to be put away in alphabetical order. Then report the blood report
-      to Clozapine Rems. I also make sure the hard copies of the prescriptions are all sorted out and filled
-      correctly.
-    </p>
+  <!-- End Grid -->
     </div>
-    <br/><br/><br/>
-    <div class='text-left'>
-    <h3>2018</h3>
-    <p>
-      I joined Origin Code Academy as a Full Time Student. During my time in Origin, I learned how to code
-      in JavaScript, HTML, CSS, SQL, MONGOD DB, EJS, React, Redux and React Native. Also, they help me improve
-      critical thinking, problem solving and self reliant. 
-    </p>
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    </div>
-    </div>
+      <br/>
+  <!-- End Page Container -->
   </div>
   {{>footer}}
   <!-- Turbo library imports: jQuery, Turbo CDN, sample app.js.
   NOTE: These should be minified in a build script -->
-  <script type="text/javascript" src="/js/jquery.js"></script>
+  <script type='text/javascript' src='/js/jquery.js'></script>
 
   <!-- For file uploading. Remove if file upload not necessry -->
-  <script type="text/javascript" src="/js/dropzone.js"></script> 
+  <script type='text/javascript' src='/js/dropzone.js'></script> 
 
   <!-- Turbo CDN. Better to use CDN than to store locally. -->
-  <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/turbo.min.js"></script>
+  <script type='text/javascript' src='https://cdn.turbo360-dev.com/dist/turbo.min.js'></script>
 
   <!-- Your app specific code -->
-  <script type="text/javascript" src="/js/app.js"></script>
+  <script type='text/javascript' src='/js/app.js'></script>
 </body>
 </html>

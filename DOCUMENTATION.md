@@ -23,8 +23,8 @@ REACT/REDUX PROJECTS | $ turbo new <MY_PROJECT_NAME> --react
 RUN DEV SERVER | $ turbo devserver
 - This runs a simple Express server and renders the main index.html from http://localhost:3000
 - We recommend running the dev server throughout development because it accurately reflects the behavior of your site in deployment.
-- We also recommend running "gulp" in a separate tab. This invokes the build process whenever you make changes to JS or CSS files.
-- The dev server supports relative links for anchor tags. For example, <a href="/blog">Blog</a> works fine with the dev server running.
+- We also recommend running 'gulp' in a separate tab. This invokes the build process whenever you make changes to JS or CSS files.
+- The dev server supports relative links for anchor tags. For example, <a href='/blog'>Blog</a> works fine with the dev server running.
 
 BUILD THE PROJECT - ALL PROJECTS | $ npm run build
 - This packages the project assets and concatenates/minifies the imports into the 'dist' directory.
@@ -40,15 +40,15 @@ DEPLOY TO STAGING - ALL PROJECTS | $ turbo deploy
 -- Deploys your site to the Turbo staging environment. The staging URL is accessible on the internet and can be viewed by anyone.
 -- When deploying updates, it may take a minute or two for the changes to take effect as we propagate your site to multiple servers
 ** To deploy, your app must be linked to a  Turbo project. To create a Turbo project, see here: https://www.turbo360.co/create
-** It is best practice to run "$ npm run build" before deploying in order to package assets and minify imports.
+** It is best practice to run '$ npm run build' before deploying in order to package assets and minify imports.
 
 
 - - - - - - - - - - - - - - - - - - TURBO SDK COMMANDS - - - - - - - - - - - - - - - - - - 
 
 The Turbo library SDK comes in two forms: 
-1. CDN: <script src="https://cdn.turbo360-dev.com/dist/turbo.min.js" type="text/javascript"></script>
+1. CDN: <script src='https://cdn.turbo360-dev.com/dist/turbo.min.js' type='text/javascript'></script>
 2. NPM: $ npm install turbo360
-* In order to leverage the Turbo SDK, your project must be linked to an app on Turbo (https://www.turbo360.co/create). See "LINK TO TURBO PROJECT" above for instructions.
+* In order to leverage the Turbo SDK, your project must be linked to an app on Turbo (https://www.turbo360.co/create). See 'LINK TO TURBO PROJECT' above for instructions.
 
 The CDN is suited for conventional HTML/CSS with Javascript and jQuery. The NPM is best for robust client-side frameworks like React and Angular. Both come packaged with every scaffolded Turbo project and they provide the functionality for leveraging the Turbo platform.
 
@@ -64,7 +64,7 @@ DEFAULT RESOURCES
 Turbo also includes a full suite of User-based operations for user management:
 
 CDN
-import <script src="https://cdn.turbo360-dev.com/dist/turbo.min.js" type="text/javascript"></script>
+import <script src='https://cdn.turbo360-dev.com/dist/turbo.min.js' type='text/javascript'></script>
 - Turbo({site_id:<MY_APP_ID>}).login(credentials, function(err, data){})
 - Turbo({site_id:<MY_APP_ID>}).logout(function(err, data){})
 - Turbo({site_id:<MY_APP_ID>}).currentUser(function(err, data){})
@@ -85,7 +85,7 @@ Turbo supports custom resources as easily as the default ones. By simply specify
 
 CRUD OPERATIONS
 Turbo supports the standard CRUD operations as you would expect from an API. The following are the primary operations:
-CDN: import <script src="https://cdn.turbo360-dev.com/dist/turbo.min.js" type="text/javascript"></script>
+CDN: import <script src='https://cdn.turbo360-dev.com/dist/turbo.min.js' type='text/javascript'></script>
 - Turbo({site_id:<MY_APP_ID>}).create(resourceName, params, function(err, data){})
 - Turbo({site_id:<MY_APP_ID>}).fetch(resourceName, params, function(err, data){})
 - Turbo({site_id:<MY_APP_ID>}).fetchOne(resourceName, id, function(err, data){})
@@ -102,14 +102,14 @@ NPM: import turbo from 'turbo360'
 
 - - - - - - - - - - - - - - - - FILE STORAGE (https://www.turbo360.co/service/storage) - - - - - - - - - - - - - 
 
-CDN: import <script src="https://cdn.turbo360-dev.com/dist/turbo.min.js" type="text/javascript"></script>
+CDN: import <script src='https://cdn.turbo360-dev.com/dist/turbo.min.js' type='text/javascript'></script>
 - Turbo({site_id:<MY_APP_ID>}).uploadFile(params)
 	-> The 'params' argument requires 2 keys: 'apiKey' and 'completion'
 	-> 'apiKey' is the API key for the current project on Turbo 360
 	-> 'completion' is a function which takes 'err' and 'data' arguments. 'data' is returned from Turbo 360 upon successful file upload. 'err' is returned in error cases.
 	-> The 'params' argument can take 2 more optional keys: 'onUploadStart' and 'onProgressUpdate'
 	-> 'onUploadStart' is a function that is called when file begins uploading
-	-> 'onProgressUpdate' is a function that is called continously as file uploads and takes a number argument between 0-100, e.g. "37.67389454804663"
+	-> 'onProgressUpdate' is a function that is called continously as file uploads and takes a number argument between 0-100, e.g. '37.67389454804663'
 
 - Turbo({site_id:<MY_APP_ID>}).getFiles(params, function(err, data){})
 

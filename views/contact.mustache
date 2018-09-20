@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html dir='ltr' lang='en-US'>
 {{>head}}
 <body>
   {{>navbar}}
-<div class='container'>
-  <div id="contact" class="container-fluid" style="padding: 120px">
-    <h3 class="text-center">Contact</h3>
-    <p class="text-center"><em>Coding is fun!</em></p>
-      <div class="row">
-    <div class="col-md-4">
-      <p>Hiring? Please leave a comment.</p>
-      <p><i class="fas fa-map-marker-alt"></i> San Diego, US</p>
-      <p><i class="fas fa-mobile-alt"></i> Phone: +01 6198326421</p>
-      <p><i class="far fa-envelope"></i> Email: chris@kurisulim.io</p>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-      <form method='POST'>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+<!-- Page Container -->
+<div id='contact' class='w3-container' style='padding:128px 16px''>
+  <br/><br/>
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Contact Info End -->
+    <div class='w3-third'>
+      <div class="w3-container">
+       <div class='w3-container w3-card w3-white'>
+        <h2 class='w3-text-grey w3-padding-16'><i class='icon fa fa-file-contract fa-fw w3-margin-right w3-xxlarge'></i>Contact Info</h2>
+        <div class='w3-container'>
+          <p>Hiring? Drop a note.</p>
+          <p><i class='icon fa fa-home fa-fw w3-margin-right w3-large'></i>San Diego, US</p>
+          <p><i class='icon fa fa-phone fa-fw w3-margin-right w3-large'></i>Phone: +01 6198326421</p>
+          <p><i class='icon fa fa-envelope fa-fw w3-margin-right w3-large'></i>Email: chris@kurisulim.io</p>
+          <br/>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn-default btn pull-right" type="submit">Send</button>
+      </div>
+      <!-- Contact Info End -->
+
+      <!-- Contact Form -->
+    <div class="w3-twothird">
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+
         </div>
       </div>
+    <!-- End Contact Form -->
     </div>
-    </form>
+
+    </div>
+  <!-- End Grid -->
   </div>
+<!-- End Page Container -->
 </div>
-<div class='contact'>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 {{>footer}}
-</div>
-  
   <!-- Turbo library imports: jQuery, Turbo CDN, sample app.js.
   NOTE: These should be minified in a build script -->
-  <script type="text/javascript" src="/js/jquery.js"></script>
+  <script type='text/javascript' src='/js/jquery.js'></script>
 
   <!-- For file uploading. Remove if file upload not necessry -->
-  <script type="text/javascript" src="/js/dropzone.js"></script> 
+  <script type='text/javascript' src='/js/dropzone.js'></script> 
 
   <!-- Turbo CDN. Better to use CDN than to store locally. -->
-  <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/turbo.min.js"></script>
+  <script type='text/javascript' src='https://cdn.turbo360-dev.com/dist/turbo.min.js'></script>
 
   <!-- Your app specific code -->
-  <script type="text/javascript" src="/js/app.js"></script>
+  <script type='text/javascript' src='/js/app.js'></script>
 </body>
 </html>
