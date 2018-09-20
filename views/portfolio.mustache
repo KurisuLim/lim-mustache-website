@@ -1,18 +1,82 @@
 <!DOCTYPE html>
-<html dir='ltr' lang='en-US'>
+<html dir="ltr" lang="en-US">
 {{>head}}
 <body>
   {{>navbar}}
-  <div id='about' class='w3-container' style='padding:128px 16px'>
-    
-    {{text}}
-      <br/>
+  <!-- Page Content -->
+  <div id="portfolio" class="w3-container" style="padding:128px 16px">
+    <!-- Grid -->
+    <div class="w3-row-padding">
+
+ <!-- Projects -->
+  <div class="w3-container w3-card w3-white">
+  <h2 class="w3-text-grey w3-padding-16"><i class="icon fa fa-laptop-code fa-fw w3-margin-right w3-xxlarge"></i>Projects</h2>
+  <div class="w3-container">
+<!-- Nav Bars -->  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#javaScript">JavaScript</a></li>
+    <li><a data-toggle="tab" href="#react">React</a></li>
+    <li><a data-toggle="tab" href="#reactNative">React Native</a></li>
+    <li><a data-toggle="tab" href="#sql">SQL</a></li>
+    <li><a data-toggle="tab" href="#phyton">Phyton</a></li>
+  </ul>
+<!-- Tab Contents -->
+  <div class="tab-content">
+      <div id="javaScript" class="tab-pane fade in active">
+        <h2>Project Name</h2>
+        <p>Project Description.</p>
+        <h2>Project Name</h2>
+        <p>Project Description.</p>
+        <h2>Project Name</h2>
+        <p>Project Description.</p>
+      </div>
+        <div id="react" class="tab-pane fade">
+          <h2>Project Name</h2>
+          <p>Project Description.</p>
+          <h2>Project Name</h2>
+          <p>Project Description.</p>
+          <h2>Project Name</h2>
+          <p>Project Description.</p>
+        </div>
+        <div id="reactNative" class="tab-pane fade">
+          <h2>Project Name</h2>
+          <p>Project Description.</p>
+          <h2>Project Name</h2>
+          <p>Project Description.</p>
+          <h2>Project Name</h2>
+          <p>Project Description.</p>
+          </div>
+          <div id="sql" class="tab-pane fade">
+          <h2>Project Name</h2>
+          <p>Project Description.</p>
+          <h2>Project Name</h2>
+          <p>Project Description.</p>
+          <h2>Project Name</h2>
+          <p>Project Description.</p>
+          </div>
+          <div id="phyton" class="tab-pane fade">
+          <h2>Project Name</h2>
+          <p>Project Description.</p>
+          <h2>Project Name</h2>
+          <p>Project Description.</p>
+          <h2>Project Name</h2>
+          <p>Project Description.</p>
+          </div>
+        <!-- Something -->
+        </div>
+      </div>
+      </div>
+    <!-- End Project -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Page Content -->
   </div>
   {{>footer}}
 <!-- Your app specific code -->
   <!-- Turbo library imports: jQuery, Turbo CDN, sample app.js -->
-  <script type='text/javascript' src='/js/jquery.js'></script>
-  <script type='text/javascript' src='https://cdn.turbo360-dev.com/dist/turbo.min.js'></script>
-  <script type='text/javascript' src='/js/app.js'></script> <!-- Your app specific code -->
+  <script type="text/javascript" src="/js/jquery.js"></script>
+  <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/turbo.min.js"></script>
+  <script type="text/javascript" src="/js/app.js"></script> <!-- Your app specific code -->
 </body>
 </html>

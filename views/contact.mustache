@@ -1,42 +1,56 @@
 <!DOCTYPE html>
-<html dir='ltr' lang='en-US'>
+<html dir="ltr" lang="en-US">
 {{>head}}
 <body>
   {{>navbar}}
 <!-- Page Container -->
-<div id='contact' class='w3-container' style='padding:128px 16px''>
+<div id="contact" class="w3-container" style="padding:128px 16px"">
   <br/><br/>
   <!-- The Grid -->
   <div class="w3-row-padding">
 
     <!-- Contact Info End -->
-    <div class='w3-third'>
+    <div class="w3-third">
       <div class="w3-container">
-       <div class='w3-container w3-card w3-white'>
-        <h2 class='w3-text-grey w3-padding-16'><i class='icon fa fa-file-contract fa-fw w3-margin-right w3-xxlarge'></i>Contact Info</h2>
-        <div class='w3-container'>
+       <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="icon fa fa-file-contract fa-fw w3-margin-right w3-xxlarge"></i>Contact Info</h2>
+        <div class="w3-container">
           <p>Hiring? Drop a note.</p>
-          <p><i class='icon fa fa-home fa-fw w3-margin-right w3-large'></i>San Diego, US</p>
-          <p><i class='icon fa fa-phone fa-fw w3-margin-right w3-large'></i>Phone: +01 6198326421</p>
-          <p><i class='icon fa fa-envelope fa-fw w3-margin-right w3-large'></i>Email: chris@kurisulim.io</p>
+          <p><i class="icon fa fa-home fa-fw w3-margin-right w3-large"></i>San Diego, US</p>
+          <p><i class="icon fa fa-phone fa-fw w3-margin-right w3-large"></i>Phone: +01 6198326421</p>
+          <p><i class="icon fa fa-envelope fa-fw w3-margin-right w3-large"></i>Email: chris@kurisulim.io</p>
           <br/>
         </div>
       </div>
       </div>
       <!-- Contact Info End -->
+    </div>
 
-      <!-- Contact Form -->
+  <!-- Contact Form -->
     <div class="w3-twothird">
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="icon fa fa-file fa-fw w3-margin-right w3-xxlarge"></i>Contact Form</h2>
         <div class="w3-container">
-
+        <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" required name="Email">
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <textarea class="w3-input w3-border" required name="Message"></textarea>
+      </div>
+      <button type="submit" class="btn w3-block">Send</button>
+    </form><br/>
         </div>
       </div>
     <!-- End Contact Form -->
     </div>
 
-    </div>
   <!-- End Grid -->
   </div>
 <!-- End Page Container -->
@@ -44,15 +58,15 @@
 {{>footer}}
   <!-- Turbo library imports: jQuery, Turbo CDN, sample app.js.
   NOTE: These should be minified in a build script -->
-  <script type='text/javascript' src='/js/jquery.js'></script>
+  <script type="text/javascript" src="/js/jquery.js"></script>
 
   <!-- For file uploading. Remove if file upload not necessry -->
-  <script type='text/javascript' src='/js/dropzone.js'></script> 
+  <script type="text/javascript" src="/js/dropzone.js"></script> 
 
   <!-- Turbo CDN. Better to use CDN than to store locally. -->
-  <script type='text/javascript' src='https://cdn.turbo360-dev.com/dist/turbo.min.js'></script>
+  <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/turbo.min.js"></script>
 
   <!-- Your app specific code -->
-  <script type='text/javascript' src='/js/app.js'></script>
+  <script type="text/javascript" src="/js/app.js"></script>
 </body>
 </html>

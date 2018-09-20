@@ -1,16 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 
 .bgimg-1{
     background-position: center;
-    background-image: url('http://i377.photobucket.com/albums/oo212/KurisuLim/appleMacBook_zpsjetioiog.jpg');
+    background-image: url("http://i377.photobucket.com/albums/oo212/KurisuLim/appleMacBook_zpsjetioiog.jpg");
     background-size: cover;
     min-height: 100%;
 }
-body,h1,h2,h3,h4,h5,h6,p,li,a {font-family: 'Raleyway', sans-serif}
+body,h1,h2,h3,h4,h5,h6,p,li,a {font-family: "Raleyway", sans-serif}
 body, html {
     height: 100%;
     line-height: 1.8;
+    background-color: #ecf0f1;
+}
+i{
+  color: #ecf0f1;
 }
 .w3-bar .w3-button {
     padding: 16px;
@@ -23,7 +27,7 @@ body, html {
 }
 .btn{
   border-radius: 9px;
-  font-family: 'Raleyway',sans-serif;
+  font-family: "Raleyway",sans-serif;
   color: #3498db;
   font-size: 20px;
   padding: 10px 20px;
@@ -32,12 +36,40 @@ body, html {
   text-decoration: none;
 }
 .btn:hover{
-  color:white;
-  border:solid white 3px;
+  color: #bdc3c7;
+  border:solid #bdc3c7 3px;
 }
 .icon{
   color: #3498db;
 }
 .bar{
   color: #3498db;
+}
+.form-control {
+  border-radius: 0;
+}
+textarea {
+  height: 150px;
+  resize: none;
+}
+.navbar {
+  font-family: Raleyway, sans-serif;
+  background-color: #2c3e50;
+  margin-bottom: 0;
+  border: 0;
+  font-size: 14px !important;
+  letter-spacing: 4px;
+}
+.navbar-nav li a:hover {
+  color: #3498db !important;
+}
+.navbar-nav li.active a {
+  color: #3498db !important;
+  background-color:#3498db !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+footer{
+  background-color: #2c3e50;
 }
