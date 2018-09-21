@@ -24,27 +24,30 @@ router.get("/contact", (req, res) => {
 })
 
 /*  This route Send Email using send grid */
-router.post('/thanks', (req,res)=> {
-	const output =`
-	<h3>Contact details</h3>
-	<ul>
-	<li>Name: ${req.body.Name}</li>
-	<li>Email: ${req.body.Email}</li>
-	</ul>
-	<h3>Message</h3>
-	<p>${req.body.Message}</p>
-	`;
+// router.get('/thanks', (req,res)=> {
+	router.post('/thanks', (req,res)=> {
+	const name =`${req.body.Name}`;
+	const from =`${req.body.Email}`;
+	const subject = `${req.body.Subject}`;
+	const text = `${req.body.Message}`;
+
 	const msg = {
-		to: 'toffer.lim87@gmail.com',
-		from: 'test@example.com',
-		subject: 'Sending with SendGrid is Fun',
-		text: 'and easy to do anywhere, even with Node.js',
-		html: output
+		to: 'chris@kurisulim.io',
+		name: name,
+		from: from,
+		subject: subject,
+		text: text
 	};
 	console.log(msg);
 	sgMail.send(msg);
 	res.render("thanks", {contact: req.body})
+	//res.render("thanks", {text:"This is a Thank You Page"})
 });
+
+/* This route to catch error */
+router.get("*", function (req,res){
+	res.send("Opps. Something went wrong!...Err 404").status(404);
+})
 
 /*  This route render json data */
 router.get("/json", (req, res) => {
@@ -54,15 +57,6 @@ router.get("/json", (req, res) => {
 		data: "this is a sample json route."
 	})
 })
-/* This route to catch error */
-router.get("*", function (req,res){
-	res.send("Opps. Something went wrong!...Err 404").status(404);
-})
-// /*This route listen to the port */
-// router.listen(process.env.PORT || 5000, function() {
-// 	console.log("Server started.......");
-// });
-
 /*  This route sends text back as plain text. */
 router.get("/send", (req, res) => {
 	res.send("This is the Send Route")
