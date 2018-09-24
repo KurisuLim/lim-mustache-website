@@ -36,7 +36,8 @@ router.get("/contact", (req, res) => {
 		name: name,
 		from: from,
 		subject: subject,
-		text: text
+		text: text,
+		html:""
 	};
 	console.log(msg);
 	sgMail.send(msg);
