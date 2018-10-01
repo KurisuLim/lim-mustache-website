@@ -26,18 +26,23 @@ router.get("/contact", (req, res) => {
 /*  This route Send Email using send grid */
 // router.get('/thanks', (req,res)=> {
 	router.post('/thanks', (req,res)=> {
-	const name =`${req.body.Name}`;
-	const from =`${req.body.Email}`;
-	const subject = `${req.body.Subject}`;
-	const text = `${req.body.Message}`;
+		const output =`
+		<h3>Contact details</h3>
+		<ul>
+		<li>Name: ${req.body.Name}</li>
+		<li>Email: ${req.body.Email}</li>
+		<li>Subject: ${req.body.Subject}</li>
+		</ul>
+		<h3>Message</h3>
+		<p>${req.body.Message}</p>
+		`;
 
 	const msg = {
 		to: 'chris@kurisulim.io',
-		name: name,
-		from: from,
-		subject: subject,
-		text: text,
-		html:""
+		from: 'test@example.com',
+		subject: 'Sending with SendGrid is Fun',
+		text: 'and easy to do anywhere, even with Node.js',
+		html: output
 	};
 	console.log(msg);
 	sgMail.send(msg);
